@@ -1,6 +1,10 @@
 const express = require('express');
 const cors = require('cors');
 
+const { initializeDatabase } = require('./database.js');
+
+initializeDatabase();
+
 const app = express();
 const PORT = process.env.PORT || 3001; // Port pour le backend
 
